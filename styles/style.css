@@ -3,13 +3,60 @@ font-family: "Playfair Display", serif;
 font-family: "Poppins", sans-serif;
 */
 
-h1 {
+:root {
+  --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--default-font-family);
+  /*create a default font-family for the page, and only when you wnat to use something differnt you need to create that, otherwise it will be Poppins*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: black;
-  font-family: "Playfair Display", serif;
+  font-family: var(--heading-font-family);
   font-weight: bold;
+}
+h1 {
+  font-size: 96px;
 }
 
 h2 {
-  font-family: "Poppins", sans-serif;
   font-weight: normal;
+}
+
+.hero {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  color: #272142;
+}
+
+.hero h2 {
+  font-weight: normal;
+  font-weight: 2;
+  font-size: 24px;
+}
+
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
