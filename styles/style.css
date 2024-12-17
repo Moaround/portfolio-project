@@ -126,6 +126,11 @@ p {
   border-radius: 10px;
 }
 
+.img-project {
+  max-height: 400px;
+  object-fit: contain;
+}
+
 /*Bootstrap code
 .active {
   color: var(--branding-color) !important;
